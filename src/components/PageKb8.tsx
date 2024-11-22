@@ -4,7 +4,7 @@ import { useCreatePDFController } from "../hooks/useCreatePDFController";
 const content = [
   // Header ส่วนหัว
   {
-    text: "รายงานประจำสัปดาห์",
+    text: "บันทึกแจ้งดำเนินการ",
     style: "header",
     alignment: "center",
     margin: [0, 0, 0, 10],
@@ -49,40 +49,9 @@ const content = [
             width: "15%",
           },
           {
-            text: "____________________________________________",
+            text: "_____________ วันที่เริ่มสัญญา ___________ วันที่สิ้นสุดสัญญา _________",
             width: "auto",
           },
-          { text: "", width: "15%" },
-        ],
-        margin: [0, 0, 0, 5],
-      },
-      {
-        columns: [
-          { text: "", width: "15%" },
-          {
-            text: "วันที่เริ่มสัญญา",
-            width: "15%",
-          },
-          {
-            text: "____________________________________________",
-            width: "auto",
-          },
-          { text: "", width: "15%" },
-        ],
-        margin: [0, 0, 0, 5],
-      },
-      {
-        columns: [
-          { text: "", width: "15%" },
-          {
-            text: "วันที่สิ้นสุดสัญญา",
-            width: "15%",
-          },
-          {
-            text: "____________________________________________",
-            width: "auto",
-          },
-          { text: "", width: "15%" },
         ],
         margin: [0, 0, 0, 5],
       },
@@ -122,22 +91,27 @@ const content = [
   // ช่องเครื่องหมายถูก
   {
     table: {
-      widths: ["auto", "auto", "auto"],
+      widths: ["20%", "20%", "30%"],
       body: [
         [
-          { text: "☐ เพื่อโปรดทราบ", alignment: "center" },
-          { text: "☐ เพื่อพิจารณา", alignment: "center" },
-          { text: "☐ เพื่อดำเนินการ", alignment: "center" },
+          { text: "☐ เพื่อโปรดทราบ", alignment: "left" },
+          { text: "☐ เพื่อพิจารณา", alignment: "left" },
+          { text: "☐ เพื่อดำเนินการ", alignment: "left" },
+        ],
+        [
+          { text: "☐ เพื่อติดตาม", alignment: "left" },
+          { text: "☐ เพื่อเร่งรัด", alignment: "left" },
+          { text: "☐ เพื่อแก้ไขหรือแจ้งซ่อม", alignment: "left" },
         ],
       ],
     },
     layout: "noBorders",
-    margin: [140, 0, 0, 10],
+    margin: [140, 0, 0, 5],
     alignment: "center",
   },
 
   {
-    text: "1. ตารางแสดงผลงานประจำสัปดาห์(ให้ลงรายละเอียดเพื่อแสดงผลงานตามหัวเรื่องที่ระบุ)",
+    text: "1. ตารางแสดงผลงานประจำสัปดาห์(ให้ลงรายละเอียดเพื่อแสดงผลงานตามหัวเรื่องที่ระบุยกเว้นเรื่องเพื่อแก้ไขหรือแจ้งซ่อม)",
     bold: true,
     margin: [0, 0, 0, 5],
   },
@@ -218,7 +192,7 @@ const content = [
   },
 
   {
-    text: "2. ตารางแสดงปัญหาและอุปสรรค(ให้ลงรายละเอียดเพื่อแสดงผลงานตามหัวเรื่องที่ระบุ)",
+    text: "2. ตารางแสดงปัญหาและอุปสรรค(ให้ลงรายละเอียดเพื่อแสดงผลงานตามหัวเรื่องที่ระบุยกเว้นเรื่องเพื่อแก้ไขหรือแจ้งซ่อม)",
     bold: true,
     margin: [0, 0, 0, 5],
   },
@@ -346,27 +320,27 @@ const content = [
   {
     columns: [
       {
-        text: "ลงชื่อผู้รับ ___________________________",
+        text: "ลงชื่อผู้สั่งการ (กคช.) ___________________________",
         bold: true,
-        width: "50%",
-        margin: [20, 20, 0, 10],
       },
       {
-        text: "ลงชื่อผู้รับ ___________________________",
+        text: "ลงชื่อผู้รับ (ตัวแทนผู้รับจ้าง) ___________________________",
         bold: true,
-        width: "50%",
-        margin: [20, 20, 0, 10],
       },
     ],
   },
   {
     columns: [
       {
+        marginTop: 5,
+        marginLeft: 50,
         text: "(___________________________)",
         width: "50%",
         alignment: "center",
       },
       {
+        marginTop: 5,
+        marginLeft: 100,
         text: "(___________________________)",
         width: "50%",
         alignment: "center",
@@ -375,8 +349,49 @@ const content = [
   },
   {
     columns: [
-      { text: "ผู้จัดการสนาม", width: "50%", alignment: "center" },
-      { text: "ผู้จัดการงานก่อสร้าง", width: "50%", alignment: "center" },
+      {
+        marginTop: 5,
+        marginLeft: 30,
+        text: "วันที่ ___________________________",
+        width: "50%",
+        alignment: "center",
+      },
+      {
+        marginTop: 5,
+        marginLeft: 80,
+        text: "วันที่ ___________________________",
+        width: "50%",
+        alignment: "center",
+      },
+    ],
+  },
+
+  {
+    columns: [
+      {
+        marginTop: 15,
+        text: "หมายเหตุ ให้ทำความเข้าใจตารางก่อนดำเนินการ",
+        bold: true,
+        width: "auto",
+        alignment: "center",
+        //ขนาดตัวอักษร
+        fontSize: 8,
+        decoration: "underline",
+      },
+    ],
+  },
+  {
+    columns: [
+      {
+        ol: [
+          "ตารางแสดงผลงานประจำสัปดาห์(ให้ลงรายละเอียดเพื่อแสดงผลงานตามหัวเรื่องที่ระบุยกเว้นเรื่องเพื่อแก้ไขหรือแจ้งซ่อม",
+          "ตารางแสดงปัญหาและอุปสรรค(ให้ลงรายละเอียดเพื่อแสดงปัญหาและอุปสรรคตามหัวเรื่องที่ระบุยกเว้นเรื่องเพื่อแก้ไขหรือแจ้งซ่อม",
+          "ตารางแสดงเรื่องที่ต้องติดตาม ตามหัวเรื่องที่ระบุ",
+        ],
+        marginTop: 2,
+        fontSize: 8,
+
+      },
     ],
   },
 ];
@@ -388,7 +403,7 @@ export default function PageKb2() {
     // กำหนด Header (มุมขวาบน)
     header: (currentPage, pageCount) => {
       return {
-        text: `คบ.2`,
+        text: `คบ.8`,
         alignment: "right",
         margin: [0, 20, 40, 0], // [left, top, right, bottom]
       };
@@ -401,7 +416,7 @@ export default function PageKb2() {
 
   return (
     <>
-      <h2 className="text-3xl text-center font-bold py-4">คบ.2</h2>;
+      <h2 className="text-3xl text-center font-bold py-4">คบ.8</h2>;
       <iframe
         id="pdfViewer"
         style={{ width: "100%", height: "1200px" }}
