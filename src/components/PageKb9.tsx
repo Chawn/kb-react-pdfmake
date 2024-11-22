@@ -852,7 +852,7 @@ export default function PageKb9() {
 
   return (
     <>
-      <h2 className="text-3xl text-center font-bold py-4">คบ.1</h2>;
+      <h2 className="text-3xl text-center font-bold py-4">คบ.9</h2>;
       <iframe
         id="pdfViewer"
         style={{ width: '100%', height: '1200px' }}
