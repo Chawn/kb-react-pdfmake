@@ -128,11 +128,21 @@ const content2 = [
           { text: "ตำแหน่ง", style: "tableHeader", alignment: "center" },
           { text: "จำนวน", style: "tableHeader", alignment: "center" },
         ],
-        ...Array.from({ length: 15 }, (x, i) => [
-          { text: "", marginTop: 10 },
-          { text: "", marginTop: 10 },
-          { text: "", marginTop: 10 },
-        ]),
+        ...Array.from({ length: 15 }, (x, i) => {
+          if (i===14){
+            return [
+              { text: "", marginTop: 10 },
+              { text: "รวม" , alignment: "center" },
+              { text: "", marginTop: 10 },
+            ]
+          }else{
+            return [
+              { text: "", marginTop: 10 },
+              { text: "", marginTop: 10 },
+              { text: "", marginTop: 10 },
+            ]
+          }
+        }),
       ],
     },
     marginTop: 20,
