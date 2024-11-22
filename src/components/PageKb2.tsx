@@ -10,36 +10,86 @@ const content = [
     margin: [0, 0, 0, 10],
   },
   {
-    alignment: "center",
-    width: "100%",
-    text: "โครงการ _____________________________________",
+    stack: [
+      {
+        columns: [
+          { text: "", width: "15%" },
+          {
+            text: "โครงการ",
+            width: "15%",
+          },
+          {
+            text: "____________________________________________",
+            width: "auto",
+          },
+          { text: "", width: "15%" },
+        ],
+        margin: [0, 0, 0, 5],
+      },
+      {
+        columns: [
+          { text: "", width: "15%" },
+          {
+            text: "ผู้รับจ้าง",
+            width: "15%",
+          },
+          {
+            text: "____________________________________________",
+            width: "auto",
+          },
+          { text: "", width: "15%" },
+        ],
+        margin: [0, 0, 0, 5],
+      },
+      {
+        columns: [
+          { text: "", width: "15%" },
+          {
+            text: "สัญญาเลขที่",
+            width: "15%",
+          },
+          {
+            text: "____________________________________________",
+            width: "auto",
+          },
+          { text: "", width: "15%" },
+        ],
+        margin: [0, 0, 0, 5],
+      },
+      {
+        columns: [
+          { text: "", width: "15%" },
+          {
+            text: "วันที่เริ่มสัญญา",
+            width: "15%",
+          },
+          {
+            text: "____________________________________________",
+            width: "auto",
+          },
+          { text: "", width: "15%" },
+        ],
+        margin: [0, 0, 0, 5],
+      },
+      {
+        columns: [
+          { text: "", width: "15%" },
+          {
+            text: "วันที่สิ้นสุดสัญญา",
+            width: "15%",
+          },
+          {
+            text: "____________________________________________",
+            width: "auto",
+          },
+          { text: "", width: "15%" },
+        ],
+        margin: [0, 0, 0, 5],
+      },
+    ],
     margin: [0, 0, 0, 10],
+    alignment: "left",
   },
-  {
-    alignment: "center",
-    width: "100%",
-    text: "ผู้รับจ้าง _____________________________________",
-    margin: [0, 0, 0, 10],
-  },
-  {
-    alignment: "center",
-    width: "100%",
-    text: "สัญญาเลขที่ _____________________________________",
-    margin: [0, 0, 0, 10],
-  },
-  {
-    alignment: "center",
-    width: "100%",
-    text: "วันที่เริ่มสัญญา _____________________________________",
-    margin: [0, 0, 0, 10],
-  },
-  {
-    alignment: "center",
-    width: "100%",
-    text: "วันสิ้นสุดสัญญา _____________________________________",
-    margin: [0, 0, 0, 10],
-  },
-
   // ข้อมูลเกี่ยวกับสัญญา
   {
     table: {
@@ -93,8 +143,8 @@ const content = [
       body: [
         [
           {
-			alignment: "center",
-			marginTop: 8,
+            alignment: "center",
+            marginTop: 8,
             text: "รายการ",
             rowSpan: 2,
           },
@@ -118,7 +168,7 @@ const content = [
           { text: "สัปดาห์ที่ 5", alignment: "center" },
         ],
         [
-          { text: "ตามแผน (%)", alignment: "center" },
+          { text: "ตามแผน (%)", alignment: "left" },
           { text: "" },
           { text: "" },
           { text: "" },
@@ -126,7 +176,7 @@ const content = [
           { text: "" },
         ],
         [
-          { text: "ทำได้จริง (%)", alignment: "center" },
+          { text: "ทำได้จริง (%)", alignment: "left" },
           { text: "" },
           { text: "" },
           { text: "" },
@@ -134,7 +184,7 @@ const content = [
           { text: "" },
         ],
         [
-          { text: "สรุป (+) เร็ว -(-) ช้า (%)", alignment: "center" },
+          { text: "สรุป (+) เร็ว -(-) ช้า (%)", alignment: "left" },
           { text: "" },
           { text: "" },
           { text: "" },
@@ -142,7 +192,7 @@ const content = [
           { text: "" },
         ],
         [
-          { text: "เวลาผ่านไป (วัน)", alignment: "center" },
+          { text: "เวลาผ่านไป (วัน)", alignment: "left" },
           { text: "" },
           { text: "" },
           { text: "" },
@@ -150,7 +200,7 @@ const content = [
           { text: "" },
         ],
         [
-          { text: "คงเหลือเวลา (วัน)", alignment: "center" },
+          { text: "คงเหลือเวลา (วัน)", alignment: "left" },
           { text: "" },
           { text: "" },
           { text: "" },
@@ -165,7 +215,7 @@ const content = [
   // ตารางปัญหาและข้อเสนอแนะ
   {
     table: {
-      widths: ["20%", "26%", "26%", "26%"],
+      widths: ["25%", "25%", "25%", "25%"],
       body: [
         [
           {
@@ -231,7 +281,7 @@ const content = [
   // ตารางปัญหาและข้อเสนอแนะ
   {
     table: {
-      widths: ["20%", "26%", "26%", "26%"],
+      widths: ["25%", "25%", "25%", "25%"],
       body: [
         [
           {
