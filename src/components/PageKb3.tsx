@@ -196,7 +196,6 @@ const content4 = [
           {
             text: "จำนวน",
             style: "tableHeader",
-            alignment: "center",
           },
           {
             text: "ชั่วโมงการทำงาน",
