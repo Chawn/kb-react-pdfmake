@@ -4,16 +4,13 @@ import PageKb1 from './components/PageKb1';
 import PageKb2 from './components/PageKb2';
 import PageKb3 from './components/PageKb3';
 import Sidebar from './components/Sidebar';
+import PageKb7 from './components/PageKb7';
 import PageKb8 from './components/PageKb8';
 import PageKb9 from './components/PageKb9';
-// import PageKb3 from './PageKb3';
 // import PageKb4 from './PageKb4';
 // import PageKb5 from './PageKb5';
 // import PageKb6 from './PageKb6';
-// import PageKb7 from './PageKb7';
-// import PageKb8 from './PageKb8';
-// import PageKb9 from './PageKb9';
-// import PageKb10 from './PageKb10';
+import PageKb10 from './components/PageKb10';
 
 // import K1 from './K1';
 // import K2 from './K2';
@@ -36,6 +33,10 @@ const App = () => {
             path="/kb3"
             element={<PageKb3 />}
           />
+              <Route
+            path="/kb7"
+            element={<PageKb7 />}
+          />
            <Route
             path="/kb8"
             element={<PageKb8 />}
@@ -43,6 +44,10 @@ const App = () => {
           <Route
             path="/kb9"
             element={<PageKb9 />}
+          />
+           <Route
+            path="/kb10"
+            element={<PageKb10 />}
           />
           {/* <Route path='/kb3' element={<PageKb3 />} />
 				<Route path='/kb4' element={<PageKb4 />} />
