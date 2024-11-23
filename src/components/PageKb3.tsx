@@ -255,7 +255,7 @@ const content5 = [
 export default function PageKb2() {
   const { generatePDF } = useCreatePDFController({
     content: [...content1, ...content2, ...content3, ...content4,...content5],
-    fileName: "form-kb1.pdf",
+    fileName: "form-kb3.pdf",
     // กำหนด Header (มุมขวาบน)
     header: (currentPage, pageCount) => {
       return {
