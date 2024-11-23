@@ -158,7 +158,7 @@ const content1 = [
 
 const content2 = [
   {
-    marginTop: 1,
+    marginTop: 3,
     table: {
       widths: ["11%", "35%", "20%", "20%", "14%"], // กำหนดความกว้างแต่ละคอลัมน์
       body: [
@@ -195,70 +195,70 @@ const content2 = [
         ],
         [{ text: "โครงสร้าง", colSpan: 5 }, {}, {}, { text: "" }, { text: "" }],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ตำแหน่งและระดับ" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "เหล็กเสริม" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ตำแหน่งเสียบเหล็กข้างเสาและเหล็กเสียบเสา" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ตำแหน่งเสียบเหล็กคานและเหล็กเสียบคาน" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ช่องเปิดและการเสริมเหล็กกันร้าว" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "WATER STOP" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "แผ่นพื้นสำเร็จ" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "เข้าแบบ" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ความสะอาดเเละการฉีดน้ำ" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "อื่นๆ _______________________________" },
           { text: "" },
           { text: "" },
@@ -272,35 +272,35 @@ const content2 = [
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "SLEEVES" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ช่องเปิดเเละการเสริมเหล็กกันร้าว" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "เหล็กเสียบยึดท่อ" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "ท่อ SOIL,DRAIN,VENT,RAIN" },
           { text: "" },
           { text: "" },
           { text: "" },
         ],
         [
-          { text: "☐", alignment: "center", fontSize: 8 },
+          { text: "☐", alignment: "center"},
           { text: "อื่นๆ _______________________________" },
           { text: "" },
           { text: "" },
@@ -313,7 +313,7 @@ const content2 = [
 
 const content3 = [
   {
-    marginTop: 1,
+    marginTop: 3,
     columns: [
       {
         text: "จึงเรียนมาเพื่อโปรดตรวจสอบความถูกต้องก่อนปฎิบัติงาน",
