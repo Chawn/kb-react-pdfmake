@@ -6,6 +6,7 @@ const content = [
         table: {
             widths: ['*'],
             heights: ['auto'],
+            margin: [0, 0, 0, 0],
             body: [
                 [
                     {
@@ -185,8 +186,7 @@ const PageKb5 = () => {
     const { generatePDF } = useCreatePDFController({
         content: [...content],
         fileName: 'form-kb5.pdf',
-
-        pageMargins: [20, 20, 20, 20],
+        pageMargins: [20, 250, 20, 50], //จัดกึ่งกลาง
     })
 
     useEffect(() => {
