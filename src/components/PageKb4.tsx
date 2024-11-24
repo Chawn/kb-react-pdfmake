@@ -43,7 +43,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -53,7 +53,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -63,7 +63,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -73,7 +73,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -83,7 +83,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -93,7 +93,7 @@ const content = [
                         rowSpan: 2,
                         fontSize: 6.5,
 
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
@@ -102,7 +102,7 @@ const content = [
                         style: 'tableHeader',
                         rowSpan: 2,
                         fontSize: 6.5,
-                        marginTop: 20,
+                        marginTop: 17,
                         marginButton: 10,
                     },
                     {
