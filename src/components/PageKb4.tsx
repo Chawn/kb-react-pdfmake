@@ -264,6 +264,7 @@ const PageKb4 = () => {
     const { generatePDF } = useCreatePDFController({
         content: [...content],
         fileName: 'form-kb4.pdf',
+        pageMargins: [20, 89, 55, 50],
         pageOrientation: 'landscape', // แสดงผลเป็นแนวนอน
     })
     useEffect(() => {
