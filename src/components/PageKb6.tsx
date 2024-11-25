@@ -162,10 +162,10 @@ const content = [
             vLineColor: function () {
                 return '#000000'
             },
-            paddingTop: function (i) {
+            paddingTop: function () {
                 return 5
             },
-            paddingBottom: function (i) {
+            paddingBottom: function () {
                 return 5
             },
         },
