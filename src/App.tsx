@@ -11,6 +11,8 @@ import PageKb9 from './components/PageKb9';
 // import PageKb5 from './PageKb5';
 // import PageKb6 from './PageKb6';
 import PageKb10 from './components/PageKb10';
+import K1 from './components/K1';
+import K2 from './components/K2';
 
 // import K1 from './K1';
 // import K2 from './K2';
@@ -49,6 +51,9 @@ const App = () => {
             path="/kb10"
             element={<PageKb10 />}
           />
+          <Route path='/k1' element={<K1 />} />
+          <Route path='/k2' element={<K2 />} />
+          {/* <Route path='/k2' element={<K2 />} /> */}
           {/* <Route path='/kb3' element={<PageKb3 />} />
 				<Route path='/kb4' element={<PageKb4 />} />
 				<Route path='/kb5' element={<PageKb5 />} />
