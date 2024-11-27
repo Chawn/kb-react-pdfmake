@@ -421,55 +421,101 @@ const content2 = [
             ],
           },
           {
-            marginTop: 20,
-            marginBottom: 10,
+            marginTop: 32,
             table: {
               widths: [257],
               body: [
                 [
                   {
                     stack: [
-                      "ก. จำนวนเงินทั้งหมดที่จะต้องจ่ายถึงงวดนี้",
-                      "ข. จำนวนเงินทั้งหมดที่ได้จ่ายจนถึงงวดที่แล้ว",
+                      {
+                        columns: [
+                          {
+                            text: "ก. จำนวนเงินทั้งหมดที่จะต้องจ่ายถึงงวดนี้",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        columns: [
+                          {
+                            text: "ข. จำนวนเงินทั้งหมดที่ได้จ่ายจนถึงงวดที่แล้ว",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                        marginTop: 5,
+                        marginBottom: 5,
+                      },
                     ],
                     border: [false, false, false, true],
                   },
                 ],
                 [
                   {
-                    stack: ["ค. จำนวนเงินที่จะจ่ายในงวดนี้"],
+                    columns: [
+                      {
+                        text: "ค. จำนวนเงินที่จะจ่ายในงวดนี้",
+                        width: 173,
+                      },
+                      {
+                        text: "",
+                        width: 100,
+                        alignment: "center",
+                      },
+                    ],
                     border: [false, false, false, true],
                   },
                 ],
                 [
                   {
-                    stack: [
+                    columns: [
                       {
-                        text: "ค่างานเพิ่ม-ลด",
-                        bold: true,
-                      },
-                      {
-                        text: " ",
-                        bold: true,
-                      },
-                      {
-                        text: " ",
-                        bold: true,
-                      },
+                        stack: [
+                          {
+                            text: "ค่างานเพิ่ม-ลด",
+                            bold: true,
+                          },
+                          {
+                            text: "",
+                            bold: true,
+                          },
+                          {
+                            text: " ",
+                            bold: true,
+                          },
 
-                      {
-                        text: " ",
-                        bold: true,
+                          {
+                            text: " ",
+                            bold: true,
+                          },
+                          {
+                            text: " ",
+                            bold: true,
+                          },
+                          {
+                            text: " ",
+                            bold: true,
+                          },
+                        ],
+                        width: 173,
                       },
                       {
-                        text: " ",
-                        bold: true,
-                      },
-                      {
-                        text: " ",
-                        bold: true,
+                        text: "",
+                        width: 100,
+                        alignment: "center",
                       },
                     ],
+
                     border: [false, false, false, true],
                   },
                 ],
@@ -480,14 +526,152 @@ const content2 = [
                         text: "การหักเงิน",
                         bold: true,
                       },
-                      "ง. หักเงินค่าจ้างล่วงหน้า ________ % ของผล\nงานงวดนี้",
-                      "- หักเงินคืน ________ % ของผลงานงวดนี้",
-                      "- ได้หักเงินคืนจนถึงงวดที่แล้ว",
-                      "- จำนวนเงินทั้งหมดที่หักคืนจนถึงงวดนี้",
-                      "- จำนวนเงินที่จะต้องหักต่อไป",
-                      "- จำนวนเงินที่จะต้องหักออกทั้งหมด",
-                      "จ. หักเงินประกันผลงาน _____ % ของโครงการใน\nงวดนี้",
-                      "ฉ. อื่นๆ",
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            columns: [
+                              {
+                                text: "ง. หักเงินค่าจ้างล่วงหน้า",
+                                width: "auto",
+                              },
+                              {
+                                text: "___",
+                                width: "auto",
+                              },
+                              {
+                                text: "% ของผลงานงวดนี้",
+                                width: "auto",
+                              },
+                            ],
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            columns: [
+                              {
+                                text: "- หักเงินคืน",
+                                width: "auto",
+                              },
+                              {
+                                text: "___",
+                                width: "auto",
+                              },
+                              "% ของผลงานงวดนี้",
+                            ],
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            text: "- ได้หักเงินคืนจนถึงงวดที่แล้ว",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            text: "- จำนวนเงินทั้งหมดที่หักคืนจนถึงงวดนี้",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            text: "- จำนวนเงินที่จะต้องหักต่อไป",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            text: "- จำนวนเงินที่จะต้องหักออกทั้งหมด",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        columns: [
+                          {
+                            columns: [
+                              {
+                                text: "จ. หักเงินประกันผลงาน",
+                                width: "auto",
+                              },
+                              {
+                                text: "__",
+                                width: "auto",
+                              },
+                              "%ของโครงการในงวดนี้",
+                            ],
+                            width: 178,
+                          },
+                          {
+                            text: "",
+                            width: 90,
+                            alignment: "center",
+                          },
+                        ],
+                      },
+                      {
+                        marginTop: 4,
+                        marginBottom: 3,
+                        columns: [
+                          {
+                            text: "ฉ. อื่นๆ",
+                            width: 173,
+                          },
+                          {
+                            text: "",
+                            width: 100,
+                            alignment: "center",
+                          },
+                        ],
+                      },
                     ],
                     border: [false, false, false, true],
                   },
@@ -521,9 +705,19 @@ const content2 = [
           },
           {},
           {
+            columns: [
+              {
+                text: "ช. จำนวนเงินสุทธิที่ต้องจ่ายให้แก่ผู้รับจ้างงวดนี้",
+                width: 173,
+              },
+              {
+                text: "",
+                width: 100,
+                alignment: "center",
+              },
+            ],
             marginLeft: 5,
             marginBottom: 5,
-            text: "ช. จำนวนเงินสุทธิที่ต้องจ่ายให้แก่ผู้รับจ้างงวดนี้",
             border: [true, false, true, true],
           },
           {
