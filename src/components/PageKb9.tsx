@@ -829,7 +829,7 @@ export default function PageKb9() {
     ],
     fileName: 'form-kb9.pdf',
     // กำหนด Header (มุมขวาบน)
-    header: (currentPage, pageCount) => {
+    header: (currentPage: any, pageCount: any) => {
       return {
         text: `คบ.9`,
         alignment: 'right',
@@ -837,7 +837,7 @@ export default function PageKb9() {
       };
     },
     // กำหนด Footer (มุมล่างขวา)
-    footer: (currentPage, pageCount) => {
+    footer: (currentPage: any, pageCount: any) => {
       return {
         text: `${currentPage}`,
         alignment: 'right',

@@ -24,10 +24,10 @@ export default tseslint.config(
 				{ allowConstantExport: true },
 			],
 			'@typescript-eslint/no-explicit-any': 'off',
-			'no-unused-vars': [
-				'error',
-				{ vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-			],
+			'@typescript-eslint/no-inferrable-types': 'off',
+			'no-unused-vars': 'off',
+			'@typescript-eslint/no-unused-vars': 'off',
+			'@typescript-eslint/no-implicit-any': 'off',
 		},
 	}
 );

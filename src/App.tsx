@@ -3,16 +3,16 @@ import './App.css'; // เพิ่ม CSS สำหรับการจัด 
 import PageKb1 from './components/PageKb1';
 import PageKb2 from './components/PageKb2';
 import PageKb3 from './components/PageKb3';
-import Sidebar from './components/Sidebar';
+import PageKb4 from './components/PageKb4';
+import PageKb5 from './components/PageKb5';
+import PageKb6 from './components/PageKb6';
 import PageKb7 from './components/PageKb7';
 import PageKb8 from './components/PageKb8';
 import PageKb9 from './components/PageKb9';
-import PageKb4 from './components/PageKb4';
-import PageKb5 from './components/PageKb5';
+import Sidebar from './components/Sidebar';
 
 // import PageKb4 from './PageKb4';
 // import PageKb5 from './PageKb5';
-// import PageKb6 from './PageKb6';
 import PageKb10 from './components/PageKb10';
 import K1 from './components/K1';
 import K2 from './components/K2';
