@@ -19,6 +19,9 @@ export default function Sidebar() {
 					<li>
 						<Link to='/k2'>ค่า k2</Link>
 					</li>
+					<li>
+						<Link to='/171268'>171268</Link>
+					</li>
 				</ul>
 			</nav>
 		</div>

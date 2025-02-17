@@ -16,6 +16,7 @@ import PageKb5 from './components/PageKb5';
 import PageKb10 from './components/PageKb10';
 import K1 from './components/K1';
 import K2 from './components/K2';
+import Page171268 from './components/171268';
 
 // import K1 from './K1';
 // import K2 from './K2';
@@ -31,7 +32,7 @@ const App = () => {
 
 					<Route path='/kb4' element={<PageKb4 />} />
 					<Route path='/kb5' element={<PageKb5 />} />
-					<Route path='/kb6' element={<PageKb6 />} />
+					{/* <Route path='/kb6' element={<PageKb6 />} /> */}
 					<Route path='/kb7' element={<PageKb7 />} />
 					<Route path='/kb8' element={<PageKb8 />} />
 					<Route path='/kb9' element={<PageKb9 />} />
@@ -39,6 +40,7 @@ const App = () => {
 
 					<Route path='/k1' element={<K1 />} />
 					<Route path='/k2' element={<K2 />} />
+					<Route path='/171268' element={<Page171268 />} />
 
 					<Route path='*' element={<h1>เลือกเมนูจากด้านซ้าย</h1>} />
 				</Routes>
